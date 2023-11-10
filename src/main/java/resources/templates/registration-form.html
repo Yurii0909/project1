@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form th:action="@{/user/register}" th:object="${user}" method="post">
+    <label>Фамилия:</label>
+    <input type="text" th:field="*{lastName}" />
+
+    <label>Имя:</label>
+    <input type="text" th:field="*{firstName}" />
+
+    <label>Отчество:</label>
+    <input type="text" th:field="*{middleName}" />
+
+    <label>Дата рождения:</label>
+    <input type="text" th:field="*{dateOfBirth}" />
+
+    <label>Номер телефона:</label>
+    <input type="text" th:field="*{phoneNumber}" />
+
+    <label>Пол:</label>
+    <input type="text" th:field="*{gender}" />
+
+    <input type="submit" value="Зарегистрироваться" />
+</form>
+</body>
+</html>
