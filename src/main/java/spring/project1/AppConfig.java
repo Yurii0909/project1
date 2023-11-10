@@ -21,7 +21,7 @@ public class AppConfig {
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/new_schema");
         dataSource.setUsername("root");
-        dataSource.setPassword("Koleso!123");
+        dataSource.setPassword("");
         return dataSource;
     }
 
